@@ -93,8 +93,8 @@ public partial class CategoryPage : MasterContentPage
 
     private async void ImageButton_Clicked(object sender, EventArgs e)
     {
-        var result = await DisplayAlert("Delete Product", "Do you want to delete?", "DELETE", "CANCEL");
-        if (result)
+        var result = await DisplayAlert("Delete Product", "Do you want to delete?", "CANCEL", "DELETE");
+        if (!result)
         {
             var category = ((ImageButton)sender).BindingContext as Category;
             await _categoryPageViewModel.DeleteCategory(category.Id);

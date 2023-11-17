@@ -39,76 +39,74 @@
 
             <Border StrokeThickness="1" Stroke="Black" StrokeShape="RoundRectangle" 
                 Grid.Row="2" Grid.ColumnSpan="3">
-                <RefreshView Command="{Binding GetAllCategoryCommand}" IsRefreshing="True">
-                    <CollectionView x:Name="categoryListView" ItemsSource="{Binding Categories}" 
+                <CollectionView x:Name="categoryListView" ItemsSource="{Binding Categories}" 
                                     SelectionMode="Single">
-                        <CollectionView.Header >
-                            <Grid Margin="5, 5, 5, 5" HeightRequest="30" RowDefinitions="Auto" 
+                    <CollectionView.Header >
+                        <Grid Margin="5, 5, 5, 5" HeightRequest="30" RowDefinitions="Auto" 
                               ColumnDefinitions="30*, 30*, 30*, 30*">
-                                <Label Text="Category Name" TextColor="Black" FontAttributes="Bold" 
+                            <Label Text="Category Name" TextColor="Black" FontAttributes="Bold" 
                                    HorizontalOptions="Center" Grid.Row="0" Grid.Column="0"/>
-                                <Label Text="Action" TextColor="Black" FontAttributes="Bold" 
+                            <Label Text="Action" TextColor="Black" FontAttributes="Bold" 
                                    HorizontalOptions="Center" Grid.Row="0" Grid.Column="1"/>
-                            </Grid>
-                        </CollectionView.Header>
-                        <CollectionView.ItemTemplate>
-                            <DataTemplate x:DataType="model:Category">
-                                <Frame CornerRadius="5" Margin="10, 5, 10, 5" Padding="10"
+                        </Grid>
+                    </CollectionView.Header>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate x:DataType="model:Category">
+                            <Frame CornerRadius="5" Margin="10, 5, 10, 5" Padding="10"
                                        BackgroundColor="White">
-                                    <Grid RowDefinitions="Auto" ColumnDefinitions="30*, 30*, 30*, 30*" 
+                                <Grid RowDefinitions="Auto" ColumnDefinitions="30*, 30*, 30*, 30*" 
                                           VerticalOptions="FillAndExpand">
-                                        <Entry x:Name="categoryName" Text="{Binding CategoryName, Mode=TwoWay}" 
+                                    <Entry x:Name="categoryName" Text="{Binding CategoryName, Mode=TwoWay}" 
                                                FontAttributes="Bold" Grid.Row="0" Grid.Column="0" 
                                                TextColor="Black" Completed="Entry_Completed" />
-                                        <ImageButton Source="delete_icon.png" WidthRequest="44"
+                                    <ImageButton Source="delete_icon.png" WidthRequest="44"
                                                      Grid.Row="0" Grid.Column="1"
                                                      HeightRequest="44" CommandParameter="{Binding .}"
                                                      Clicked="ImageButton_Clicked" 
                                                      ToolTipProperties.Text="Delete Product"/>
-                                    </Grid>
-                                </Frame>
-                            </DataTemplate>
-                        </CollectionView.ItemTemplate>
-                        <CollectionView.Footer>
-                            <StackLayout Orientation="Horizontal" Padding="10">
-                                <Picker Title="Select PageSize" BackgroundColor="#E3E7DA" TextColor="Black"
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                    <CollectionView.Footer>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <Picker Title="Select PageSize" BackgroundColor="#E3E7DA" TextColor="Black"
                                         x:Name="pageSize" SelectedIndexChanged="pageSize_SelectedIndexChanged">
-                                    <Picker.ItemsSource>
-                                        <x:Array Type="{x:Type x:Int32}">
-                                            <x:Int32>5</x:Int32>
-                                            <x:Int32>10</x:Int32>
-                                            <x:Int32>15</x:Int32>
-                                            <x:Int32>20</x:Int32>
-                                            <x:Int32>25</x:Int32>
-                                        </x:Array>
-                                    </Picker.ItemsSource>
-                                </Picker>
-                                <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="5">
-                                    <Button Text="Previous" x:Name="previous" Clicked="previous_Clicked"/>
-                                    <Frame CornerRadius="5" BackgroundColor="Transparent" HeightRequest="55" 
+                                <Picker.ItemsSource>
+                                    <x:Array Type="{x:Type x:Int32}">
+                                        <x:Int32>5</x:Int32>
+                                        <x:Int32>10</x:Int32>
+                                        <x:Int32>15</x:Int32>
+                                        <x:Int32>20</x:Int32>
+                                        <x:Int32>25</x:Int32>
+                                    </x:Array>
+                                </Picker.ItemsSource>
+                            </Picker>
+                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="5">
+                                <Button Text="Previous" x:Name="previous" Clicked="previous_Clicked"/>
+                                <Frame CornerRadius="5" BackgroundColor="Transparent" HeightRequest="55" 
                                            WidthRequest="65">
-                                        <Label Text="{Binding Page}" TextColor="Black"
+                                    <Label Text="{Binding Page}" TextColor="Black"
                                                VerticalTextAlignment="Center"/>
-                                    </Frame>
-                                    <Button Text="Next" x:Name="next" Clicked="next_Clicked"/>
-                                </StackLayout>
+                                </Frame>
+                                <Button Text="Next" x:Name="next" Clicked="next_Clicked"/>
                             </StackLayout>
-                        </CollectionView.Footer>
-                        <CollectionView.EmptyView>
-                            <ContentView>
-                                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
-                                    <Label Text="No results matched your filter."
+                        </StackLayout>
+                    </CollectionView.Footer>
+                    <CollectionView.EmptyView>
+                        <ContentView>
+                            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                                <Label Text="No results matched your filter."
                                            FontAttributes="Bold"
                                            Margin="100"
                                            FontSize="18"
                                            VerticalOptions="CenterAndExpand"
                                            HorizontalOptions="CenterAndExpand"
                                            TextColor="Red"/>
-                                </HorizontalStackLayout>
-                            </ContentView>
-                        </CollectionView.EmptyView>
-                    </CollectionView>
-                </RefreshView>
+                            </HorizontalStackLayout>
+                        </ContentView>
+                    </CollectionView.EmptyView>
+                </CollectionView>
             </Border>
         </Grid>
     </ContentPage.Content>
