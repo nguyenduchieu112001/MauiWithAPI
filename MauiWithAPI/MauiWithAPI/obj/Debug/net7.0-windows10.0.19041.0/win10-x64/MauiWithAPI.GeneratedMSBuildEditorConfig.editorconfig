@@ -1,0 +1,89 @@
+is_global = true
+build_property.TargetFramework = net7.0-windows10.0.19041.0
+build_property.TargetPlatformMinVersion = 10.0.17763.0
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 9A19103F-16F7-4668-BE54-9A1E7A4F7556
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MauiWithAPI
+build_property.ProjectDir = E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/CustomControls/MasterContentPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.CustomControls.MasterContentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = CustomControls\MasterContentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = CustomControls\MasterContentPage.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/AuthenPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.AuthenPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\AuthenPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\AuthenPage.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/CategoryPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.CategoryPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\CategoryPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\CategoryPage.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/Components/AddCategoryPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.Components.AddCategoryPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Components\AddCategoryPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Components\AddCategoryPopup.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/Components/AddProductPopup.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.Components.AddProductPopup.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Components\AddProductPopup.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Components\AddProductPopup.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/LoadingPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.LoadingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\LoadingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\LoadingPage.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/ProductPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.ProductPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\ProductPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\ProductPage.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/UserPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.UserPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\UserPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\UserPage.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
+
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml

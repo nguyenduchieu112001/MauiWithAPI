@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               x:Class="MyFirstMauiApp.Views.Components.AddCategoryPopup"
+               xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+               CanBeDismissedByTappingOutsideOfPopup="True">
+
+    <VerticalStackLayout Margin="10, 5, 10, 5" Padding="10" BackgroundColor="PapayaWhip" Spacing="10">
+        <Label Text="Add Category" FontSize="20" FontAttributes="Bold" TextColor="DarkOrange" 
+               HorizontalOptions="Center" />
+
+        <StackLayout Spacing="10">
+            <Frame CornerRadius="10" Padding="10" BackgroundColor="White">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Category Name:" TextColor="Black" Grid.Column="0" 
+                           Grid.Row="0" VerticalOptions="Center" Margin="0,0,10,0"/>
+                    <Entry x:Name="entryCategoryName" Placeholder="Category Name" 
+                           TextColor="Black" Grid.Column="1" Grid.Row="0" VerticalOptions="Center" />
+
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <Grid ColumnDefinitions="*, *" ColumnSpacing="10" Margin="0, 20, 0, 0">
+            <Button Text="CANCEL" BackgroundColor="RosyBrown" 
+                        TextColor="White" Clicked="CancelButton_Clicked"/>
+            <Button Text="SAVE" BackgroundColor="Green" Grid.Column="1"
+                        TextColor="White" Clicked="SaveButton_Clicked" />
+        </Grid>
+    </VerticalStackLayout>
+</toolkit:Popup>

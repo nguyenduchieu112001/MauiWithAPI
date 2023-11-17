@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<toolkit:Popup xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiWithAPI.Pages.Components.AddProductPopup"
+             xmlns:viewmodel="clr-namespace:MauiWithAPI.ViewModels"
+             x:DataType="viewmodel:CategoryPageViewModel"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             CanBeDismissedByTappingOutsideOfPopup="False">
+    
+    <VerticalStackLayout Margin="10, 5, 10, 5" Padding="10" BackgroundColor="PapayaWhip" Spacing="10">
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Add Product" FontSize="20" 
+                   FontAttributes="Bold" TextColor="DarkOrange" 
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+            <ImageButton Source="close.png" HeightRequest="15" BackgroundColor="Transparent"
+                         WidthRequest="15" HorizontalOptions="End" VerticalOptions="Center"
+                         Clicked="CancelButton_Clicked"/>
+        </StackLayout>
+
+        <StackLayout Spacing="10">
+            <Frame CornerRadius="10" Padding="10" BackgroundColor="White">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Product Name:" TextColor="Black" Grid.Column="0"
+                            Grid.Row="0" VerticalOptions="Center" Margin="0,0,10,0"/>
+                    <Frame Grid.Column="1" Grid.Row="0" Grid.ColumnSpan="2"
+                           CornerRadius="5" 
+                           BorderColor="Gray" Padding="0" BackgroundColor="WhiteSmoke">
+                        <Entry x:Name="entryProductName" Placeholder="Product Name" 
+                               TextColor="Black" VerticalOptions="Center"
+                               ClearButtonVisibility="WhileEditing"/>
+                    </Frame>
+
+                    <Label Text="Price:" TextColor="Black" Grid.Column="0" 
+                            Grid.Row="1" VerticalOptions="Center" Margin="0,0,10,0"/>
+                    <Frame Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" CornerRadius="5" 
+                           BorderColor="Gray" Padding="0" BackgroundColor="WhiteSmoke">
+                        <Entry x:Name="entryPrice" Placeholder="Price" Keyboard="Numeric" 
+                               TextColor="Black" VerticalOptions="Center" ClearButtonVisibility="WhileEditing"/>
+                    </Frame>
+
+                    <Label Text="Image:" TextColor="Black" Grid.Column="0" 
+                            Grid.Row="2" VerticalOptions="Center" Margin="0,0,10,0"/>
+                    <Frame Grid.Column="1" Grid.Row="2" CornerRadius="5" BorderColor="Gray" Padding="0" BackgroundColor="WhiteSmoke">
+                        <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Label Text="Choose image" x:Name="imageProduct" TextColor="Black" VerticalOptions="Center" />
+                        </StackLayout>
+                    </Frame>
+                    <Button Text="Choose image" x:Name="chooseImage" Grid.Column="2" Grid.Row="2" 
+                            TextColor="Black" BackgroundColor="CornflowerBlue" HeightRequest="30" 
+                            Clicked="chooseImage_Clicked"/>
+
+                    <Label Text="Category:" TextColor="Black" Grid.Column="0" 
+                            Grid.Row="3" VerticalOptions="Center" Margin="0,0,10,0"/>
+                    <Picker Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2"
+                            x:Name="categoryPicker"
+                            TextColor="Black"
+                            Title="Select a Category"
+                            TitleColor="Black"
+                            BackgroundColor="LightYellow"
+                            ItemsSource="{Binding Categories}" 
+                            ItemDisplayBinding="{Binding CategoryName}"/>
+                </Grid>
+            </Frame>
+        </StackLayout>
+        <Grid ColumnDefinitions="*, *" ColumnSpacing="10" Margin="0, 10, 0, 0">
+            <Button Text="CANCEL" BackgroundColor="RosyBrown" 
+                TextColor="White" Clicked="CancelButton_Clicked"/>
+            <Button Text="SAVE" BackgroundColor="Green" Grid.Column="1"
+                TextColor="White" Clicked="SaveButton_Clicked" />
+        </Grid>
+    </VerticalStackLayout>
+</toolkit:Popup>

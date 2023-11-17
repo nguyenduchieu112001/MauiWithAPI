@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiWithAPI.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiWithAPI.Pages"
+    xmlns:viewmodel="clr-namespace:MauiWithAPI.ViewModels"
+    x:DataType="viewmodel:AuthPageViewModel"
+    Shell.FlyoutBehavior="Locked"
+    FlyoutWidth="160"
+    Shell.TabBarIsVisible="False">
+
+    <ShellContent 
+        ContentTemplate="{DataTemplate local:LoadingPage}" 
+        Route="LoadingPage"
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"/>
+    
+    <ShellContent
+        ContentTemplate="{DataTemplate local:AuthenPage}"
+        Route="AuthenPage"
+        FlyoutItemIsVisible="False"
+        Shell.FlyoutBehavior="Disabled"/>
+
+    <FlyoutItem Title="Users" Route="UserPage">
+        <ShellContent ContentTemplate="{DataTemplate local:UserPage}"/>
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Products" Route="ProductPage">
+        <ShellContent ContentTemplate="{DataTemplate local:ProductPage}"/>
+    </FlyoutItem>
+
+    <FlyoutItem Title="Categories" Route="CategoryPage">
+        <ShellContent ContentTemplate="{DataTemplate local:CategoryPage}"/>
+    </FlyoutItem>
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout Padding="20">
+            <Button Command="{Binding LogoutCommand}" BackgroundColor="IndianRed" Text="Logout" TextColor="White" FontAttributes="Bold" FontSize="18" />
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
+
+</Shell>
