@@ -51,11 +51,6 @@ public partial class CategoryPage : MasterContentPage
         }
     }
 
-    private void refreshButton_Clicked(object sender, EventArgs e)
-    {
-        categoryListView.ItemsSource = _categoryPageViewModel.Categories;
-    }
-
     private async void pageSize_SelectedIndexChanged(object sender, EventArgs e)
     {
         var selectPageSize = ((Picker)sender).SelectedItem;

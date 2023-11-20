@@ -68,11 +68,6 @@ public partial class ProductPage : MasterContentPage
         }
     }
 
-    private void refreshButton_Clicked(object sender, EventArgs e)
-    {
-        productListView.ItemsSource = _productPageViewModel.Products;
-    }
-
     private async void categoryPicker_SelectedIndexChanged(object sender, EventArgs e)
     {
         var picker = (Picker)sender;
