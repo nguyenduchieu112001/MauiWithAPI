@@ -84,4 +84,19 @@ public partial class AuthenPage : ContentPage
             await DisplayAlert("Alert!!!", "Please enter register form", "Ok");
         }
     }
+
+    private void CheckBox_CheckedChanged(object sender, CheckedChangedEventArgs e)
+    {
+        passwordTextField.IsPassword = !e.Value;
+    }
+
+    private void CheckBoxPasswordRegister_CheckedChanged(Object sender, CheckedChangedEventArgs e)
+    {
+        passwordRegister.IsPassword = !e.Value;
+    }
+
+    private void CheckBoxConfirmPasswordRegister_CheckedChanged(Object sender, CheckedChangedEventArgs e)
+    {
+        confirmPWRegister.IsPassword = !e.Value;
+    }
 }
