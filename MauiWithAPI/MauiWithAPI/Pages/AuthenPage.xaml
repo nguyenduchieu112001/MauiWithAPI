@@ -40,13 +40,14 @@
                     </Label.FormattedText>
                 </Label>
 
-                <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" Grid.Row="1">
+                <Frame HeightRequest="50" BorderColor="LightGreen" Grid.Row="1" BackgroundColor="Transparent">
                     <StackLayout Orientation="Horizontal" Grid.Row="1">
                         <Image Source="user.png" WidthRequest="20" 
                                    HeightRequest="20" Grid.Row="0" />
-                        <Entry x:Name="usernameTextField" TextColor="Black" WidthRequest="350" 
+                        <Entry x:Name="usernameTextField" TextColor="Black" WidthRequest="320" Text=""
                                HeightRequest="50" Placeholder="Username" ClearButtonVisibility="WhileEditing" 
-                               Grid.Row="1"/>
+                               Grid.Row="1">
+                        </Entry>
                     </StackLayout>
                 </Frame>
 
@@ -54,7 +55,8 @@
                 <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" Grid.Row="2">
                     <StackLayout Orientation="Horizontal">
                         <Image Source="password.png" WidthRequest="20" HeightRequest="20" Grid.Row="0" />
-                        <Entry x:Name="passwordTextField" TextColor="Black" WidthRequest="280" HeightRequest="50"
+                        <Entry x:Name="passwordTextField" TextColor="Black" WidthRequest="280" 
+                               HeightRequest="50" Text="" Completed="loginButton_Clicked"
                                Placeholder="Password" IsPassword="True" ClearButtonVisibility="WhileEditing"/>
                         <CheckBox CheckedChanged="CheckBox_CheckedChanged" Color="Green"/>
                     </StackLayout>
@@ -69,9 +71,21 @@
                 </Grid>
 
                 <Button Text="LOGIN" x:Name="loginButton" HeightRequest="40" VerticalOptions="End"
-                                    HorizontalOptions="Fill" Margin="20,0,20,0" CornerRadius="10"
-                                    Padding="0"  FontAttributes="Bold" TextColor="Black" Clicked="loginButton_Clicked"
-                                    Grid.Row="4" Background="{StaticResource Primary}">
+                        HorizontalOptions="Fill" Margin="20,0,20,0" CornerRadius="10"
+                        Padding="0" FontAttributes="Bold" TextColor="Black" Clicked="loginButton_Clicked"
+                        Grid.Row="4" BackgroundColor="#7272F6">
+                    <Button.Triggers>
+                        <MultiTrigger TargetType="Button">
+                            <MultiTrigger.Conditions>
+                                <BindingCondition Binding="{Binding Source={x:Reference usernameTextField},
+                                                            Path=Text.Length}" Value="0" />
+                                <BindingCondition Binding="{Binding Source={x:Reference passwordTextField},
+                                                            Path=Text.Length}" Value="0" />
+                            </MultiTrigger.Conditions>
+                            <Setter Property="IsEnabled" Value="False"/>
+                            <Setter Property="BackgroundColor" Value="Gray" />
+                        </MultiTrigger>
+                    </Button.Triggers>
                 </Button>
                 <Grid Grid.Row="5" ColumnDefinitions="0.5*,0.5*" Padding="12,0,0,0" HorizontalOptions="Center">
                     <HorizontalStackLayout VerticalOptions="Center" Spacing="10">

@@ -24,7 +24,7 @@
 
                     <Label Text="Category Name:" TextColor="Black" Grid.Column="0" 
                            Grid.Row="0" VerticalOptions="Center" Margin="0,0,10,0"/>
-                    <Entry x:Name="entryCategoryName" Placeholder="Category Name" 
+                    <Entry x:Name="entryCategoryName" Placeholder="Category Name" Text=""
                            TextColor="Black" Grid.Column="1" Grid.Row="0" VerticalOptions="Center" />
 
                 </Grid>
@@ -34,7 +34,18 @@
             <Button Text="CANCEL" BackgroundColor="RosyBrown" 
                         TextColor="White" Clicked="CancelButton_Clicked"/>
             <Button Text="SAVE" BackgroundColor="Green" Grid.Column="1"
-                        TextColor="White" Clicked="SaveButton_Clicked" />
+                        TextColor="White" Clicked="SaveButton_Clicked">
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference entryCategoryName},
+                                                        Path=Text.Length}" Value="0" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="False" />
+                        <Setter Property="BackgroundColor" Value="Gray" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
         </Grid>
     </VerticalStackLayout>
 </toolkit:Popup>

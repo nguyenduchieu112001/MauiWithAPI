@@ -38,7 +38,7 @@
                            CornerRadius="5" 
                            BorderColor="Gray" Padding="0" BackgroundColor="WhiteSmoke">
                         <Entry x:Name="entryProductName" Placeholder="Product Name" 
-                               TextColor="Black" VerticalOptions="Center"
+                               TextColor="Black" VerticalOptions="Center" Text=""
                                ClearButtonVisibility="WhileEditing"/>
                     </Frame>
 
@@ -46,7 +46,7 @@
                             Grid.Row="1" VerticalOptions="Center" Margin="0,0,10,0"/>
                     <Frame Grid.ColumnSpan="2" Grid.Column="1" Grid.Row="1" CornerRadius="5" 
                            BorderColor="Gray" Padding="0" BackgroundColor="WhiteSmoke">
-                        <Entry x:Name="entryPrice" Placeholder="Price" Keyboard="Numeric" 
+                        <Entry x:Name="entryPrice" Placeholder="Price" Keyboard="Numeric" Text=""
                                TextColor="Black" VerticalOptions="Center" ClearButtonVisibility="WhileEditing"/>
                     </Frame>
 
@@ -78,7 +78,24 @@
             <Button Text="CANCEL" BackgroundColor="RosyBrown" 
                 TextColor="White" Clicked="CancelButton_Clicked"/>
             <Button Text="SAVE" BackgroundColor="Green" Grid.Column="1"
-                TextColor="White" Clicked="SaveButton_Clicked" />
+                TextColor="White" Clicked="SaveButton_Clicked">
+                <Button.Triggers>
+                    <MultiTrigger TargetType="Button">
+                        <MultiTrigger.Conditions>
+                            <BindingCondition Binding="{Binding Source={x:Reference entryProductName},
+                                                        Path=Text.Length}" Value="0" />
+                            <BindingCondition Binding="{Binding Source={x:Reference entryPrice},
+                                                        Path=Text.Length}" Value="0" />
+                            <BindingCondition Binding="{Binding Source={x:Reference imageProduct},
+                                                        Path=Text}" Value="Choose image" />
+                            <BindingCondition Binding="{Binding Source={x:Reference categoryPicker},
+                                                        Path=SelectedItem}" Value="{x:Null}" />
+                        </MultiTrigger.Conditions>
+                        <Setter Property="IsEnabled" Value="False" />
+                        <Setter Property="BackgroundColor" Value="Gray" />
+                    </MultiTrigger>
+                </Button.Triggers>
+            </Button>
         </Grid>
     </VerticalStackLayout>
 </toolkit:Popup>
