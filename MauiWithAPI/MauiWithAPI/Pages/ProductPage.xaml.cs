@@ -17,8 +17,9 @@ public partial class ProductPage : MasterContentPage
     }
     protected override void OnAppearing()
     {
-        _productPageViewModel.GetAllProductsCommand.Execute(null);
-        _productPageViewModel.GetAllCategoryCommand.Execute(null);
+
+        _ = _productPageViewModel.GetAllProducts();
+        _ = _productPageViewModel.GetAllCategories();
 
         pageSize.SelectedIndex = 0;
         previous.IsEnabled = true;
@@ -40,18 +41,18 @@ public partial class ProductPage : MasterContentPage
         await _productPageViewModel.AddProduct(product);
     }
 
-    private void entryPrice_TextChanged(object sender, TextChangedEventArgs e)
-    {
-        if (!string.IsNullOrWhiteSpace(e.NewTextValue))
-        {
-            string newText = new(e.NewTextValue.Where(c => char.IsDigit(c)).ToArray());
+    //private void EntryPrice_TextChanged(object sender, TextChangedEventArgs e)
+    //{
+    //    if (!string.IsNullOrWhiteSpace(e.NewTextValue))
+    //    {
+    //        string newText = new(e.NewTextValue.Where(c => char.IsDigit(c)).ToArray());
 
-            if (e.NewTextValue != newText)
-            {
-                ((Entry)sender).Text = newText;
-            }
-        }
-    }
+    //        if (e.NewTextValue != newText)
+    //        {
+    //            ((Entry)sender).Text = newText;
+    //        }
+    //    }
+    //}
 
     private async void productName_Completed(object sender, EventArgs e)
     {
@@ -71,17 +72,20 @@ public partial class ProductPage : MasterContentPage
     private async void categoryPicker_SelectedIndexChanged(object sender, EventArgs e)
     {
         var picker = (Picker)sender;
-        var selectedCategory = (Category)picker.SelectedItem;
         var product = (Product)picker.BindingContext;
-        var updateProduct = new Product
+        var selectedCategory = (Category)picker.SelectedItem;
+        if (selectedCategory != null)
         {
-            Id = product.Id,
-            ProductName = product.ProductName,
-            Price = product.Price,
-            CategoryId = selectedCategory.Id,
-        };
-
-        await _productPageViewModel.UpdateProduct(updateProduct);
+            var category = selectedCategory;
+            var updateProduct = new Product
+            {
+                Id = product.Id,
+                ProductName = product.ProductName,
+                Price = product.Price,
+                CategoryId = category.Id,
+            };
+            await _productPageViewModel.UpdateProduct(updateProduct);
+        }
     }
 
     private async void deleteProduct_Clicked(object sender, EventArgs args)
@@ -144,7 +148,7 @@ public partial class ProductPage : MasterContentPage
             next.IsEnabled = true;
             previous.IsEnabled = true;
             _productPageViewModel.Page++;
-            _ = _productPageViewModel.GetAllCategory();
+            _ = _productPageViewModel.GetAllCategories();
         }
     }
 
@@ -157,7 +161,7 @@ public partial class ProductPage : MasterContentPage
             previous.IsEnabled = true;
             next.IsEnabled = true;
             _productPageViewModel.Page--;
-            _ = _productPageViewModel.GetAllCategory();
+            _ = _productPageViewModel.GetAllCategories();
         }
     }
 }

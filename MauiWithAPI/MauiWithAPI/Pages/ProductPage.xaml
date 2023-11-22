@@ -69,19 +69,19 @@
                                     <Image x:Name="imageProduct" Source="{Binding ProductImage, Converter={StaticResource ImageConvert}}" 
                                                HeightRequest="80"
                                                Grid.Row="0" Grid.Column="0" />
-                                    <Entry x:Name="productName" Text="{Binding ProductName, Mode=TwoWay}" 
+                                    <Entry x:Name="productName" Text="{Binding ProductName}" 
                                            FontAttributes="Bold" Grid.Row="0" Grid.Column="1" TextColor="Black" 
                                            Completed="productName_Completed" HorizontalTextAlignment="Center" />
-                                    <Entry x:Name="price" Text="{Binding Price, Mode=TwoWay}" 
+                                    <Entry x:Name="price" Text="{Binding Price}" 
                                            FontAttributes="Bold" Grid.Row="0" Grid.Column="2" TextColor="Black" 
                                            Completed="productName_Completed" HorizontalTextAlignment="Center"/>
-                                    <Picker x:Name="categoryPicker" Title="{Binding Category.CategoryName}"
+                                    <Picker x:Name="categoryPicker" Title="{Binding Category.CategoryName, Mode=TwoWay}"
                                             TitleColor="Black" FontAttributes="Bold"
-                                            ItemsSource="{Binding Source={x:Reference productListView}, Path=BindingContext.Categories}"
+                                            ItemsSource="{Binding Source={x:Reference productListView}, 
+                                                            Path=BindingContext.Categories}"
                                             ItemDisplayBinding="{Binding CategoryName}"
                                             SelectedIndexChanged="categoryPicker_SelectedIndexChanged"
-                                            TextColor="Black"
-                                            Grid.Row="0" Grid.Column="3"
+                                            TextColor="Black" Grid.Row="0" Grid.Column="3"
                                             VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"/>
                                     <StackLayout Grid.Row="0" Grid.Column="4" Orientation="Horizontal"
                                                      VerticalOptions="CenterAndExpand" Spacing="10"
