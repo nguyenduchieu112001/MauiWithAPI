@@ -10,10 +10,10 @@ namespace MauiWithAPI.ViewModels
     public partial class ProductPageViewModel : BaseViewModel
     {
         [ObservableProperty]
-        ObservableCollection<Product> products = new();
+        ObservableCollection<Product> products;
 
         [ObservableProperty]
-        ObservableCollection<Category> categories = new();
+        ObservableCollection<Category> categories;
 
         [ObservableProperty]
         public int page = 1;
@@ -35,6 +35,10 @@ namespace MauiWithAPI.ViewModels
             ICategoryService categoryService,
             IAuthenService authenService) : base(authenService)
         {
+
+            products = new();
+            categories = new();
+
             _productService = productService;
             _categoryService = categoryService;
         }
@@ -58,7 +62,7 @@ namespace MauiWithAPI.ViewModels
         }
 
         [RelayCommand]
-        public async Task GetAllCategory()
+        public async Task GetAllCategories()
         {
             var result = await _categoryService.GetCategoriesAsync(0, 0, null);
             if (Categories.Count > 0)
@@ -81,7 +85,7 @@ namespace MauiWithAPI.ViewModels
             {
                 return;
             }
-            var result = await _productService.AddProductAsync(product);
+            var result = await _productService.SaveProductAsync(product, true);
             if (result != null)
             {
                 toast.CreateToastShow("Add successful");
@@ -97,7 +101,7 @@ namespace MauiWithAPI.ViewModels
 
         public async Task UpdateProduct(Product product)
         {
-            var result = await _productService.UpdateProductAsync(product);
+            var result = await _productService.SaveProductAsync(product);
             if (result != null)
             {
                 toast.CreateToastShow("Update successful");

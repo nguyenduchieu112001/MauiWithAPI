@@ -55,7 +55,7 @@ namespace MauiWithAPI.ViewModels
             {
                 return;
             }
-            var result = await _categoryService.AddCategoryAsync(category);
+            var result = await _categoryService.SaveCategoryAsync(category, true);
             if (result != null)
             {
                 toast.CreateToastShow("Add successful");
@@ -70,7 +70,7 @@ namespace MauiWithAPI.ViewModels
 
         public async Task UpdateCategory(Category category)
         {
-            var result = await _categoryService.UpdateCategoryAsync(category);
+            var result = await _categoryService.SaveCategoryAsync(category);
             if (result != null)
             {
                 toast.CreateToastShow("Update successful");

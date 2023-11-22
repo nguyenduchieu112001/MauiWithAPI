@@ -14,7 +14,7 @@ namespace MauiWithAPI.Services
 
         public async Task<string> DeleteCategoryAsync(int Id)
         {
-            var client = await _authenService.GetAuthenticatedHttpClientAsync(AppConstants.HttpCategory);
+            using var client = await _authenService.GetAuthenticatedHttpClientAsync(AppConstants.HttpCategory);
             var response = await client.DeleteAsync($"{client.BaseAddress}/{Id}");
             if (!response.IsSuccessStatusCode)
             {
@@ -28,39 +28,9 @@ namespace MauiWithAPI.Services
             return null;
         }
 
-        public async Task<Category> UpdateCategoryAsync(Category category)
-        {
-            var client = await _authenService.GetAuthenticatedHttpClientAsync(AppConstants.HttpCategory);
-            var response = await client.PutAsJsonAsync(client.BaseAddress, category);
-            if (response.IsSuccessStatusCode)
-            {
-                var apiResponse = await _authenService.DeserializeApiResponseAsync<Category>(response);
-                if (apiResponse.Status)
-                {
-                    return apiResponse.Data;
-                }
-            }
-            return null;
-        }
-
-        public async Task<Category> AddCategoryAsync(Category category)
-        {
-            var client = await _authenService.GetAuthenticatedHttpClientAsync(AppConstants.HttpCategory);
-            var response = await client.PostAsJsonAsync(client.BaseAddress, category);
-            if (response.IsSuccessStatusCode)
-            {
-                var apiResponse = await _authenService.DeserializeApiResponseAsync<Category>(response);
-                if (apiResponse.Status)
-                {
-                    return apiResponse.Data;
-                }
-            }
-            return null;
-        }
-
         public async Task<PagedApiResponse<IEnumerable<Category>>> GetCategoriesAsync(int page, int pageSize, string keyword)
         {
-            var client = await _authenService.GetAuthenticatedHttpClientAsync(AppConstants.HttpCategory);
+            using var client = await _authenService.GetAuthenticatedHttpClientAsync(AppConstants.HttpCategory);
             var uriBuilder = new UriBuilder(client.BaseAddress)
             {
                 Query = $"page={page}&pageSize={pageSize}&keyword={WebUtility.UrlEncode(keyword)}"
@@ -69,6 +39,29 @@ namespace MauiWithAPI.Services
             if (response.IsSuccessStatusCode)
             {
                 var apiResponse = await _authenService.DeserializeApiResponseAsync<PagedApiResponse<IEnumerable<Category>>>(response);
+                if (apiResponse.Status)
+                {
+                    return apiResponse.Data;
+                }
+            }
+            return null;
+        }
+
+        public async Task<Category> SaveCategoryAsync(Category category, bool isNewCategory = false)
+        {
+            using var client = await _authenService.GetAuthenticatedHttpClientAsync(AppConstants.HttpCategory);
+            HttpResponseMessage response;
+            if (isNewCategory)
+            {
+                response = await client.PostAsJsonAsync(client.BaseAddress, category);
+            }
+            else
+            {
+                response = await client.PutAsJsonAsync(client.BaseAddress, category);
+            }
+            if (response != null && response.IsSuccessStatusCode)
+            {
+                var apiResponse = await _authenService.DeserializeApiResponseAsync<Category>(response);
                 if (apiResponse.Status)
                 {
                     return apiResponse.Data;
