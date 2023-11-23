@@ -66,13 +66,25 @@
                             <Frame CornerRadius="5" Padding="10" Margin="10, 5, 10, 5" BackgroundColor="White">
                                 <Grid RowDefinitions="Auto" ColumnDefinitions="30*, 30*, 30*, 30*, 30*" 
                                           VerticalOptions="FillAndExpand">
-                                    <Image x:Name="imageProduct" Source="{Binding ProductImage, Converter={StaticResource ImageConvert}}" 
-                                               HeightRequest="80"
-                                               Grid.Row="0" Grid.Column="0" />
-                                    <Entry x:Name="productName" Text="{Binding ProductName}" 
+                                    <!--<Image x:Name="imageProduct" Source="{Binding ProductImage, 
+                                                                Converter={StaticResource ImageConvert}}" 
+                                           HeightRequest="80" Grid.Row="0" Grid.Column="0" />-->
+                                    <Image Source="{Binding ProductImage, Converter={StaticResource ImageConvert}}"
+                                           Aspect="AspectFill"
+                                           HeightRequest="80"
+                                           WidthRequest="80"
+                                           HorizontalOptions="Center">      
+                                        <Image.Clip>
+                                            <EllipseGeometry Center="40,40" RadiusX="40" RadiusY="40" />
+                                        </Image.Clip>
+                                        <Image.Shadow>
+                                            <Shadow Brush="Black" Offset="10,10" Opacity="0.8" />
+                                        </Image.Shadow>
+                                    </Image>
+                                    <Entry x:Name="productName" Text="{Binding ProductName, Mode=TwoWay}" 
                                            FontAttributes="Bold" Grid.Row="0" Grid.Column="1" TextColor="Black" 
                                            Completed="productName_Completed" HorizontalTextAlignment="Center" />
-                                    <Entry x:Name="price" Text="{Binding Price}" 
+                                    <Entry x:Name="price" Text="{Binding Price, Mode=TwoWay}" 
                                            FontAttributes="Bold" Grid.Row="0" Grid.Column="2" TextColor="Black" 
                                            Completed="productName_Completed" HorizontalTextAlignment="Center"/>
                                     <Picker x:Name="categoryPicker" Title="{Binding Category.CategoryName, Mode=TwoWay}"

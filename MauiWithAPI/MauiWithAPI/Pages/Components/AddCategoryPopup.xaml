@@ -6,8 +6,13 @@
                CanBeDismissedByTappingOutsideOfPopup="True">
 
     <VerticalStackLayout Margin="10, 5, 10, 5" Padding="10" BackgroundColor="PapayaWhip" Spacing="10">
-        <Label Text="Add Category" FontSize="20" FontAttributes="Bold" TextColor="DarkOrange" 
-               HorizontalOptions="Center" />
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Add Category" FontSize="20" FontAttributes="Bold" TextColor="DarkOrange" 
+                   HorizontalOptions="CenterAndExpand" VerticalOptions="Center" />
+            <ImageButton Source="close.png" HeightRequest="15" BackgroundColor="Transparent"
+                         WidthRequest="15" HorizontalOptions="End" VerticalOptions="Center"
+                         Clicked="CancelButton_Clicked"/>
+        </StackLayout>
 
         <StackLayout Spacing="10">
             <Frame CornerRadius="10" Padding="10" BackgroundColor="White">
