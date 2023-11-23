@@ -7,9 +7,10 @@
     <Shell.BackButtonBehavior>
         <BackButtonBehavior IsVisible="False"/>
     </Shell.BackButtonBehavior>
+
     <Grid ColumnDefinitions="0.5*, 0.5*" RowDefinitions="0.3*, 0.7*" Background="#83E9EE">
-        <Border Grid.ColumnSpan="1" Stroke="Transparent" Background="Transparent" 
-            Grid.RowSpan="2">
+
+        <Border Grid.ColumnSpan="1" Stroke="Transparent" Background="Transparent" Grid.RowSpan="2">
             <Border.StrokeShape>
                 <RoundRectangle CornerRadius="0,0,100,100"/>
             </Border.StrokeShape>
