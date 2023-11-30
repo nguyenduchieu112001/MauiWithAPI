@@ -8,11 +8,13 @@
             <Grid RowDefinitions="50, *, Auto">
                 <VerticalStackLayout Grid.Row="0" BackgroundColor="CadetBlue" Padding="10">
                     <StackLayout Orientation="Horizontal">
-                        <Label Text="{Binding Source={x:Static system:DateTime.Now}, StringFormat='{0:dddd, MMMM dd yyyy}'}" 
+                        <Label Text="{Binding Source={x:Static system:DateTime.Now}, 
+                                              StringFormat='{0:dddd, MMMM dd yyyy}'}" 
                                TextColor="Black" 
                                HorizontalOptions="StartAndExpand" 
                                FontAttributes="Bold"/>
-                        <Grid ColumnDefinitions="0.5*,0.5*" Padding="12,0,0,0" HorizontalOptions="EndAndExpand">
+                        <Grid ColumnDefinitions="0.5*,0.5*" Padding="12,0,0,0" 
+                              HorizontalOptions="EndAndExpand">
                             <HorizontalStackLayout VerticalOptions="Center" Spacing="10">
                                 <Image Source="{TemplateBinding HeaderLogo}"
                                         WidthRequest="20"

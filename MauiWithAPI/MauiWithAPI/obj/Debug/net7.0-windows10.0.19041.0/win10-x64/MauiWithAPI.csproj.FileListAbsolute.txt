@@ -346,3 +346,15 @@ E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\red_x.scale-100.png
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close_icon.scale-100.png
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-100.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\hidden_password.scale-100.jpg
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\show_password.scale-100.jpg
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-125.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-150.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-200.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-400.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close2.scale-100.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_icon.scale-100.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\refresh_icon.scale-100.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add_circle_icon.scale-100.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\add.scale-100.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\logout.scale-100.png

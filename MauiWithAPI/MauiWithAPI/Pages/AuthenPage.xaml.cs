@@ -13,7 +13,6 @@ public partial class AuthenPage : ContentPage
 
     private async void loginButton_Clicked(object sender, EventArgs e)
     {
-
         await Task.Delay(2000);
 
         if (!string.IsNullOrWhiteSpace(usernameTextField.Text)

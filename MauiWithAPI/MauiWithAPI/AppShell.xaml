@@ -15,7 +15,7 @@
         Route="LoadingPage"
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"/>
-    
+
     <ShellContent
         ContentTemplate="{DataTemplate local:AuthenPage}"
         Route="AuthenPage"
@@ -36,7 +36,14 @@
 
     <Shell.FlyoutFooter>
         <VerticalStackLayout Padding="20">
-            <Button Command="{Binding LogoutCommand}" BackgroundColor="IndianRed" Text="Logout" TextColor="White" FontAttributes="Bold" FontSize="18" />
+            <ImageButton Command="{Binding LogoutCommand}" 
+                         BackgroundColor="IndianRed" 
+                         Source="logout.png" 
+                         WidthRequest="100"
+                         HeightRequest="40"
+                         CornerRadius="15"
+                         BorderWidth="4"
+                         BorderColor="Gray"/>
         </VerticalStackLayout>
     </Shell.FlyoutFooter>
 

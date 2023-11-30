@@ -27,19 +27,27 @@
                        SearchButtonPressed="SearchBar_SearchButtonPressed" 
                        TextColor="Black"
                        Placeholder="Search product items..."/>
-            <Button x:Name="AddButton"
+            <ImageButton x:Name="AddButton"
                     Grid.Row="1" Grid.Column="1" 
-                    WidthRequest="150"
-                    BackgroundColor="Green"
-                    TextColor="Black"
-                    Text="Add Product" 
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    CornerRadius="30"
+                    BorderWidth="4"
+                    BorderColor="Gray"
+                    BackgroundColor="#BBF7BB"
+                    Source="add_circle_icon.png"
+                    ToolTipProperties.Text="Add Product"
                     Clicked="Button_Clicked"/>
-            <Button x:Name="refreshButton"
+            <ImageButton x:Name="refreshButton"
                     Grid.Row="1" Grid.Column="2" 
-                    WidthRequest="150"
-                    BackgroundColor="Blue"
-                    TextColor="Black"
-                    Text="Refresh"
+                    WidthRequest="40"
+                    HeightRequest="40"
+                    CornerRadius="30"
+                    BorderWidth="4"
+                    BorderColor="Gray"
+                    BackgroundColor="#0069d9"
+                    Source="refresh_icon.png"
+                    ToolTipProperties.Text="refresh"
                     Command="{Binding GetAllProductsCommand}" />
 
             <Border StrokeThickness="1" Stroke="Black" StrokeShape="RoundRectangle" 
@@ -99,9 +107,9 @@
                                                      VerticalOptions="CenterAndExpand" Spacing="10"
                                                      HorizontalOptions="CenterAndExpand">
                                         <ImageButton Source="image.png" HeightRequest="10"
-                                                         WidthRequest="10" Clicked="imageProduct_Clicked"
-                                                         CommandParameter="{Binding .}"
-                                                         ToolTipProperties.Text="Change Image"/>
+                                                     WidthRequest="10" Clicked="imageProduct_Clicked"
+                                                     CommandParameter="{Binding .}"
+                                                     ToolTipProperties.Text="Change Image"/>
                                         <ImageButton Source="delete_icon.png" WidthRequest="44"
                                                          HeightRequest="44" CommandParameter="{Binding .}"
                                                          Clicked="deleteProduct_Clicked" 
@@ -125,10 +133,12 @@
                                     </x:Array>
                                 </Picker.ItemsSource>
                             </Picker>
-                            <StackLayout Orientation="Horizontal" HorizontalOptions="EndAndExpand" Spacing="5">
+                            <StackLayout Orientation="Horizontal" 
+                                         HorizontalOptions="EndAndExpand" 
+                                         Spacing="5">
                                 <Button Text="Previous" x:Name="previous" Clicked="previous_Clicked"/>
-                                <Frame CornerRadius="5" BackgroundColor="Transparent" HeightRequest="55" 
-                                        WidthRequest="65">
+                                <Frame CornerRadius="5" BackgroundColor="Transparent" 
+                                       HeightRequest="55" WidthRequest="65">
                                     <Label Text="{Binding Page}" TextColor="Black"
                                             VerticalTextAlignment="Center"/>
                                 </Frame>

@@ -22,20 +22,28 @@
             <SearchBar Grid.Row="1" BackgroundColor="LightGray" TextColor="Black"
                    SearchButtonPressed="SearchBar_SearchButtonPressed" 
                    Placeholder="Search category items..."/>
-            <Button x:Name="AddButton"
-                Grid.Row="1" Grid.Column="1" 
-                WidthRequest="150"
-                BackgroundColor="Green"
-                TextColor="Black"
-                Text="Add Category" 
-                Clicked="AddButton_Clicked"/>
-            <Button x:Name="refreshButton"
-                Grid.Row="1" Grid.Column="2" 
-                WidthRequest="150"
-                BackgroundColor="Blue"
-                TextColor="Black"
-                Text="Refresh" 
-                Command="{Binding GetAllCategoryCommand}"/>
+            <ImageButton x:Name="AddButton"
+                        Grid.Row="1" Grid.Column="1" 
+                        WidthRequest="40"
+                        HeightRequest="40"
+                        CornerRadius="30"
+                        BorderWidth="4"
+                        BorderColor="Gray"
+                        BackgroundColor="#BBF7BB"
+                        Source="add_circle_icon.png"
+                        ToolTipProperties.Text="Add Category"
+                        Clicked="AddButton_Clicked"/>
+            <ImageButton x:Name="refreshButton"
+                        Grid.Row="1" Grid.Column="2" 
+                        WidthRequest="40"
+                        HeightRequest="40"
+                        CornerRadius="30"
+                        BorderWidth="4"
+                        BorderColor="Gray"
+                        BackgroundColor="#0069d9"
+                        Source="refresh_icon.png"
+                        ToolTipProperties.Text="refresh"
+                        Command="{Binding GetAllCategoryCommand}"/>
 
             <Border StrokeThickness="1" Stroke="Black" StrokeShape="RoundRectangle" 
                     Grid.Row="2" Grid.ColumnSpan="3">

@@ -13,11 +13,7 @@ namespace MauiWithAPI
             AuthenService authenService = new();
             MainPage = new AppShell(new AuthPageViewModel(authenService));
 
-            CollectionViewHandler.Mapper.AppendToMapping("HeaderAndFooterFix", (_, collectionView) =>
-            {
-                collectionView.AddLogicalChild(collectionView.Header as Element);
-                collectionView.AddLogicalChild(collectionView.Footer as Element);
-            });
+
 
 #if WINDOWS10_0_19041_0_OR_GREATER
             Microsoft.Maui.Handlers.PickerHandler.Mapper.AppendToMapping(nameof(IPicker.Title), (handler, view) =>
@@ -31,6 +27,12 @@ namespace MauiWithAPI
                     pick.TitleColor.ToRgba(out byte r, out byte g, out byte b, out byte a);
                     handler.PlatformView.PlaceholderForeground = new XamlUI.SolidColorBrush(WindowsUI.Color.FromArgb(a, r, g, b));
                 }
+            });
+
+            CollectionViewHandler.Mapper.AppendToMapping("HeaderAndFooterFix", (_, collectionView) =>
+            {
+                collectionView.AddLogicalChild(collectionView.Header as Element);
+                collectionView.AddLogicalChild(collectionView.Footer as Element);
             });
 #endif
         }

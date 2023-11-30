@@ -19,8 +19,9 @@
         </Border>
 
         <!-- Login Frame -->
-        <Frame x:Name="loginFrame" CornerRadius="10" BorderColor="White" HeightRequest="450" Grid.Column="1" Grid.ColumnSpan="1" 
-           Grid.RowSpan="2" Background="White" Grid.Row="0" WidthRequest="400" VerticalOptions="Center">
+        <Frame x:Name="loginFrame" CornerRadius="10" BorderColor="White" HeightRequest="450" 
+               Grid.Column="1" Grid.ColumnSpan="1" Grid.RowSpan="2" Background="White" Grid.Row="0"
+               WidthRequest="400" VerticalOptions="Center">
             <Grid IsClippedToBounds="True" HeightRequest="420" >
                 <Grid.RowDefinitions>
                     <RowDefinition Height="90"/>
@@ -31,64 +32,77 @@
                     <RowDefinition Height="40"/>
                 </Grid.RowDefinitions>
                 <Label Padding="0,10,0,0" HorizontalOptions="Center" 
-                                   HorizontalTextAlignment="Center" VerticalTextAlignment="Start">
+                       HorizontalTextAlignment="Center" VerticalTextAlignment="Start">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Welcome back" FontSize="32" FontAttributes="Bold" TextColor="Black"/>
+                            <Span Text="Welcome back" FontSize="32" FontAttributes="Bold" 
+                                  TextColor="Black"/>
                             <Span Text="{x:Static system:Environment.NewLine}"/>
                             <Span Text="Login to your account" FontSize="14" TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
 
-                <Frame HeightRequest="50" BorderColor="LightGreen" Grid.Row="1" BackgroundColor="Transparent">
+                <Frame HeightRequest="50" BorderColor="LightGreen" Grid.Row="1" 
+                       BackgroundColor="Transparent">
                     <StackLayout Orientation="Horizontal" Grid.Row="1">
                         <Image Source="user.png" WidthRequest="20" 
-                                   HeightRequest="20" Grid.Row="0" />
-                        <Entry x:Name="usernameTextField" TextColor="Black" WidthRequest="320" Text=""
-                               HeightRequest="50" Placeholder="Username" ClearButtonVisibility="WhileEditing" 
-                               Grid.Row="1">
+                               HeightRequest="20" Grid.Row="0" />
+                        <Entry x:Name="usernameTextField" TextColor="Black" WidthRequest="320" 
+                               Text="" HeightRequest="50" Placeholder="Username" 
+                               ClearButtonVisibility="WhileEditing" Grid.Row="1">
                         </Entry>
                     </StackLayout>
                 </Frame>
 
 
-                <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" Grid.Row="2">
+                <Frame BackgroundColor="Transparent" HeightRequest="50" 
+                       BorderColor="LightGreen" Grid.Row="2">
                     <StackLayout Orientation="Horizontal">
-                        <Image Source="password.png" WidthRequest="20" HeightRequest="20" Grid.Row="0" />
+                        <Image Source="password.png" WidthRequest="20" HeightRequest="20" 
+                               Grid.Row="0" />
                         <Entry x:Name="passwordTextField" TextColor="Black" WidthRequest="280" 
                                HeightRequest="50" Text="" Completed="loginButton_Clicked"
-                               Placeholder="Password" IsPassword="True" ClearButtonVisibility="WhileEditing"/>
-                        <CheckBox CheckedChanged="CheckBox_CheckedChanged" Color="Green"/>
+                               Placeholder="Password" IsPassword="True" 
+                               ClearButtonVisibility="WhileEditing"/>
+                        <CheckBox CheckedChanged="CheckBox_CheckedChanged" Color="Green" 
+                                  ToolTipProperties.Text="Show password"/>
                     </StackLayout>
                 </Frame>
 
-                <Grid ColumnDefinitions="0.5*,0.5*" Grid.Row="3" Padding="12,0,0,0"  VerticalOptions="Start">
+                <Grid ColumnDefinitions="0.5*,0.5*" Grid.Row="3" Padding="12,0,0,0"  
+                      VerticalOptions="Start">
                     <HorizontalStackLayout VerticalOptions="Center" Padding="10,0,0,0" >
                         <CheckBox Color="{StaticResource Primary}"/>
-                        <Label Text="Remember me"  FontSize="12" VerticalOptions="Center" TextColor="Black"/>
+                        <Label Text="Remember me"  FontSize="12" VerticalOptions="Center" 
+                               TextColor="Black"/>
                     </HorizontalStackLayout>
-                    <Label Text="Forgot password?" Grid.Column="1"  TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" Padding="10,0,0,0" FontSize="12"  VerticalOptions="Center" />
+                    <Label Text="Forgot password?" Grid.Column="1"  
+                           TextColor="{StaticResource Primary}" HorizontalTextAlignment="Center" 
+                           Padding="10,0,0,0" FontSize="12"  VerticalOptions="Center" />
                 </Grid>
 
                 <Button Text="LOGIN" x:Name="loginButton" HeightRequest="40" VerticalOptions="End"
                         HorizontalOptions="Fill" Margin="20,0,20,0" CornerRadius="10"
-                        Padding="0" FontAttributes="Bold" TextColor="Black" Clicked="loginButton_Clicked"
-                        Grid.Row="4" BackgroundColor="#7272F6">
+                        Padding="0" FontAttributes="Bold" TextColor="Black"
+                        Clicked="loginButton_Clicked" Grid.Row="4" BackgroundColor="#7272F6">
                     <Button.Triggers>
                         <MultiTrigger TargetType="Button">
                             <MultiTrigger.Conditions>
-                                <BindingCondition Binding="{Binding Source={x:Reference usernameTextField},
-                                                            Path=Text.Length}" Value="0" />
-                                <BindingCondition Binding="{Binding Source={x:Reference passwordTextField},
-                                                            Path=Text.Length}" Value="0" />
+                                <BindingCondition 
+                                    Binding="{Binding Source={x:Reference usernameTextField},
+                                                      Path=Text.Length}" Value="0" />
+                                <BindingCondition 
+                                    Binding="{Binding Source={x:Reference passwordTextField},
+                                                      Path=Text.Length}" Value="0" />
                             </MultiTrigger.Conditions>
                             <Setter Property="IsEnabled" Value="False"/>
                             <Setter Property="BackgroundColor" Value="Gray" />
                         </MultiTrigger>
                     </Button.Triggers>
                 </Button>
-                <Grid Grid.Row="5" ColumnDefinitions="0.5*,0.5*" Padding="12,0,0,0" HorizontalOptions="Center">
+                <Grid Grid.Row="5" ColumnDefinitions="0.5*,0.5*" Padding="12,0,0,0" 
+                      HorizontalOptions="Center">
                     <HorizontalStackLayout VerticalOptions="Center" Spacing="10">
                         <Label Text="New User?" FontSize="Small" TextColor="Black"/>
                         <Label  
@@ -121,23 +135,28 @@
                    HorizontalTextAlignment="Center" VerticalTextAlignment="Start">
                     <Label.FormattedText>
                         <FormattedString>
-                            <Span Text="Welcome" FontSize="32"   FontAttributes="Bold" TextColor="Black"/>
+                            <Span Text="Welcome" FontSize="32"   FontAttributes="Bold" 
+                                  TextColor="Black"/>
                             <Span Text="{x:Static system:Environment.NewLine}"/>
                             <Span Text="register your account" FontSize="14" TextColor="Black"/>
                         </FormattedString>
                     </Label.FormattedText>
                 </Label>
-                <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" Grid.Row="1">
+                <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" 
+                       Grid.Row="1">
                     <StackLayout Orientation="Horizontal" Grid.Row="1">
-                        <Entry x:Name="usernameRegister" TextColor="Black" WidthRequest="350" HeightRequest="50"
-                            Placeholder="Username" ClearButtonVisibility="WhileEditing" Grid.Row="1" />
+                        <Entry x:Name="usernameRegister" TextColor="Black" WidthRequest="350" 
+                               HeightRequest="50" Placeholder="Username" 
+                               ClearButtonVisibility="WhileEditing" Grid.Row="1" />
                     </StackLayout>
                 </Frame>
 
-                <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" Grid.Row="2">
+                <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" 
+                       Grid.Row="2">
                     <StackLayout Orientation="Horizontal" Grid.Row="2">
-                        <Entry x:Name="emailRegister" TextColor="Black" WidthRequest="350" HeightRequest="50"
-                               Placeholder="Email" ClearButtonVisibility="WhileEditing" Grid.Row="2">
+                        <Entry x:Name="emailRegister" TextColor="Black" WidthRequest="350" 
+                               HeightRequest="50" Placeholder="Email" 
+                               ClearButtonVisibility="WhileEditing" Grid.Row="2">
                             <Entry.Behaviors>
                                 <toolkit:EmailValidationBehavior 
                                     x:Name="emailValidator"
@@ -147,34 +166,42 @@
                     </StackLayout>
                 </Frame>
 
-                <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" Grid.Row="3">
+                <Frame BackgroundColor="Transparent" HeightRequest="50" BorderColor="LightGreen" 
+                       Grid.Row="3">
                     <StackLayout Orientation="Horizontal" Grid.Row="3">
-                        <Entry x:Name="passwordRegister" TextColor="Black" WidthRequest="320" HeightRequest="50"
-                               Placeholder="Password" ClearButtonVisibility="WhileEditing" 
+                        <Entry x:Name="passwordRegister" TextColor="Black" WidthRequest="320" 
+                               HeightRequest="50" Placeholder="Password" 
+                               ClearButtonVisibility="WhileEditing" 
                                IsPassword="True" Grid.Row="3"/>
-                        <CheckBox CheckedChanged="CheckBoxPasswordRegister_CheckedChanged" Color="Green"/>
+                        <CheckBox CheckedChanged="CheckBoxPasswordRegister_CheckedChanged" 
+                                  Color="Green"/>
                     </StackLayout>
                 </Frame>
 
                 <Frame x:Name="confirmPW" BackgroundColor="Transparent" HeightRequest="50" 
                        BorderColor="LightGreen" Grid.Row="4">
                     <StackLayout Orientation="Horizontal" Grid.Row="4">
-                        <Entry x:Name="confirmPWRegister" TextColor="Black" WidthRequest="320" HeightRequest="50"
+                        <Entry x:Name="confirmPWRegister" TextColor="Black" WidthRequest="320" 
+                               HeightRequest="50"
                                Placeholder="Confirm Password" ClearButtonVisibility="WhileEditing" 
                                IsPassword="True" Grid.Row="4"/>
-                        <CheckBox CheckedChanged="CheckBoxConfirmPasswordRegister_CheckedChanged" Color="Green"/>
+                        <CheckBox CheckedChanged="CheckBoxConfirmPasswordRegister_CheckedChanged" 
+                                  Color="Green"/>
                     </StackLayout>
                 </Frame>
 
-                <Button Text="REGISTER" x:Name="registerButton" HeightRequest="40" VerticalOptions="End"
-                    HorizontalOptions="Fill" Margin="20,0,20,0" CornerRadius="10"
-                    Padding="0"  FontAttributes="Bold" TextColor="Black" Clicked="registerButton_Clicked"
-                    Grid.Row="5" Background="{StaticResource Primary}">
+                <Button Text="REGISTER" x:Name="registerButton" HeightRequest="40" 
+                        VerticalOptions="End" HorizontalOptions="Fill" Margin="20,0,20,0" 
+                        CornerRadius="10" Padding="0" FontAttributes="Bold" TextColor="Black" 
+                        Clicked="registerButton_Clicked" Grid.Row="5" 
+                        Background="{StaticResource Primary}">
                 </Button>
-                <Grid Grid.Row="6" ColumnDefinitions="0.5*,0.5*" Padding="12,0,0,0" HorizontalOptions="Center">
+                <Grid Grid.Row="6" ColumnDefinitions="0.5*,0.5*" Padding="12,0,0,0" 
+                      HorizontalOptions="Center">
                     <HorizontalStackLayout VerticalOptions="Center" Spacing="10">
                         <Label Text="Have a account?" FontSize="Small" TextColor="Black"/>
-                        <Label Text="Sign Up" FontSize="Small" FontAttributes="Bold" TextColor="Green">
+                        <Label Text="Sign Up" FontSize="Small" FontAttributes="Bold" 
+                               TextColor="Green">
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer
                                     Tapped="OnSignInTapped" />
