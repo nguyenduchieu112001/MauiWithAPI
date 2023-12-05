@@ -30,6 +30,9 @@
     <MauiXaml Update="Pages\Components\AddProductPopup.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
+    <MauiXaml Update="Pages\Dashboard.xaml">
+      <SubType>Designer</SubType>
+    </MauiXaml>
     <MauiXaml Update="Pages\LoadingPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>

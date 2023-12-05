@@ -58,6 +58,12 @@ build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.Componen
 build_metadata.AdditionalFiles.TargetPath = Pages\Components\AddProductPopup.xaml
 build_metadata.AdditionalFiles.RelativePath = Pages\Components\AddProductPopup.xaml
 
+[E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/Dashboard.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.Dashboard.xaml
+build_metadata.AdditionalFiles.TargetPath = Pages\Dashboard.xaml
+build_metadata.AdditionalFiles.RelativePath = Pages\Dashboard.xaml
+
 [E:/.NET/MauiWithAPI/MauiWithAPI/MauiWithAPI/Pages/LoadingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = MauiWithAPI.Pages.LoadingPage.xaml

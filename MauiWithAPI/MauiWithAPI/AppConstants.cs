@@ -26,5 +26,10 @@ namespace MauiWithAPI
         {
             await Shell.Current.GoToAsync($"//{nameof(AuthenPage)}");
         }
+
+        public static async Task NavigateToDashboard()
+        {
+            await Shell.Current.GoToAsync($"//{nameof(Dashboard)}");
+        }
     }
 }

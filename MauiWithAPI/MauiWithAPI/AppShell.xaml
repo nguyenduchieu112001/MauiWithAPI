@@ -22,6 +22,10 @@
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"/>
 
+    <FlyoutItem Title="Dashboard" Route="Dashboard">
+        <ShellContent ContentTemplate="{DataTemplate local:Dashboard}"/>
+    </FlyoutItem>
+
     <FlyoutItem Title="Users" Route="UserPage">
         <ShellContent ContentTemplate="{DataTemplate local:UserPage}"/>
     </FlyoutItem>

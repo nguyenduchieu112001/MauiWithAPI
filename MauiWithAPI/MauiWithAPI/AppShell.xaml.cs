@@ -19,6 +19,7 @@ namespace MauiWithAPI
             Routing.RegisterRoute(nameof(ProductPage), typeof(ProductPage));
             Routing.RegisterRoute(nameof(UserPage), typeof(UserPage));
             Routing.RegisterRoute(nameof(LoadingPage), typeof(LoadingPage));
+            Routing.RegisterRoute(nameof(Dashboard), typeof(Dashboard));
         }
     }
 }

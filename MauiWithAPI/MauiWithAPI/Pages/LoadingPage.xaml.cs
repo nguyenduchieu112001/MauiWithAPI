@@ -26,7 +26,7 @@ public partial class LoadingPage : ContentPage
             var result = await _loadingPageViewModel.IsLogin();
             if (result)
             {
-                await AppConstants.NavigateToUserPage();
+                await AppConstants.NavigateToDashboard();
             }
             else
             {

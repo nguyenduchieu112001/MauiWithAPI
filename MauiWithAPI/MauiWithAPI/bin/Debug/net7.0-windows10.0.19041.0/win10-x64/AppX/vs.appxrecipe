@@ -30,29 +30,29 @@
     <AppXManifest Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-11-30T04:55:00.995</Modified>
+      <Modified>2023-12-05T08:24:34.528</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-11-30T04:55:00.695</Modified>
+      <Modified>2023-12-05T07:33:15.054</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.runtimeconfig.json">
       <PackagePath>MauiWithAPI.runtimeconfig.json</PackagePath>
-      <Modified>2023-11-08T02:35:50.371</Modified>
+      <Modified>2023-12-04T08:08:45.126</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.dll">
       <PackagePath>MauiWithAPI.dll</PackagePath>
-      <Modified>2023-11-30T04:54:59.034</Modified>
+      <Modified>2023-12-05T08:24:32.181</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiWithAPI.exe</PackagePath>
-      <Modified>2023-11-30T04:54:59.093</Modified>
+      <Modified>2023-12-05T08:24:32.229</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.deps.json">
       <PackagePath>MauiWithAPI.deps.json</PackagePath>
-      <Modified>2023-11-21T02:34:46.556</Modified>
+      <Modified>2023-12-04T08:08:44.998</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.10\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -822,6 +822,26 @@
       <PackagePath>CommunityToolkit.Mvvm.dll</PackagePath>
       <Modified>2023-10-24T20:16:06.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\harfbuzzsharp\7.3.0\lib\net6.0\HarfBuzzSharp.dll">
+      <PackagePath>HarfBuzzSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\livechartscore\2.0.0-rc2\lib\net6.0\LiveChartsCore.dll">
+      <PackagePath>LiveChartsCore.dll</PackagePath>
+      <Modified>2023-11-11T20:15:30.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\livechartscore.behaviours\2.0.0-rc2\lib\net7.0-windows10.0.19041\LiveChartsCore.Behaviours.dll">
+      <PackagePath>LiveChartsCore.Behaviours.dll</PackagePath>
+      <Modified>2023-11-11T20:17:16.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\livechartscore.skiasharpview\2.0.0-rc2\lib\net6.0\LiveChartsCore.SkiaSharpView.dll">
+      <PackagePath>LiveChartsCore.SkiaSharpView.dll</PackagePath>
+      <Modified>2023-11-11T20:15:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\livechartscore.skiasharpview.maui\2.0.0-rc2\lib\net6.0-windows10.0.19041\LiveChartsCore.SkiaSharpView.Maui.dll">
+      <PackagePath>LiveChartsCore.SkiaSharpView.Maui.dll</PackagePath>
+      <Modified>2023-11-11T20:16:28.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\microsoft.extensions.configuration\7.0.0\lib\net7.0\Microsoft.Extensions.Configuration.dll">
       <PackagePath>Microsoft.Extensions.Configuration.dll</PackagePath>
       <Modified>2022-10-18T16:15:22.000</Modified>
@@ -926,9 +946,37 @@
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</PackagePath>
       <Modified>2022-11-08T19:31:22.000</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\skiasharp\2.88.6\lib\net6.0\SkiaSharp.dll">
+      <PackagePath>SkiaSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:34.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\skiasharp.harfbuzz\2.88.6\lib\net6.0\SkiaSharp.HarfBuzz.dll">
+      <PackagePath>SkiaSharp.HarfBuzz.dll</PackagePath>
+      <Modified>2023-09-20T18:13:26.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\skiasharp.views.maui.controls\2.88.6\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Controls.dll</PackagePath>
+      <Modified>2023-09-20T18:11:32.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\skiasharp.views.maui.controls.compatibility\2.88.6\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Controls.Compatibility.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Controls.Compatibility.dll</PackagePath>
+      <Modified>2023-09-20T18:11:36.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\skiasharp.views.maui.core\2.88.6\lib\net6.0-windows10.0.18362.0\SkiaSharp.Views.Maui.Core.dll">
+      <PackagePath>SkiaSharp.Views.Maui.Core.dll</PackagePath>
+      <Modified>2023-09-20T18:13:28.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\skiasharp.views.winui\2.88.6\lib\net6.0-windows10.0.19041.0\SkiaSharp.Views.Windows.dll">
+      <PackagePath>SkiaSharp.Views.Windows.dll</PackagePath>
+      <Modified>2023-09-20T18:11:14.000</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\system.speech\7.0.0\runtimes\win\lib\net7.0\System.Speech.dll">
       <PackagePath>System.Speech.dll</PackagePath>
       <Modified>2022-10-18T16:18:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\harfbuzzsharp.nativeassets.win32\7.3.0\runtimes\win-x64\native\libHarfBuzzSharp.dll">
+      <PackagePath>libHarfBuzzSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:34.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\microsoft.graphics.win2d\1.0.5.1\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
@@ -937,6 +985,14 @@
     <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\microsoft.windowsappsdk\1.2.221209.1\runtimes\win10-x64\native\Microsoft.WindowsAppRuntime.Bootstrap.dll">
       <PackagePath>Microsoft.WindowsAppRuntime.Bootstrap.dll</PackagePath>
       <Modified>2022-11-08T19:31:24.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\skiasharp.nativeassets.win32\2.88.6\runtimes\win-x64\native\libSkiaSharp.dll">
+      <PackagePath>libSkiaSharp.dll</PackagePath>
+      <Modified>2023-09-20T18:11:38.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\livechartscore.behaviours\2.0.0-rc2\lib\net7.0-windows10.0.19041\LiveChartsCore.Behaviours.pri">
+      <PackagePath>LiveChartsCore.Behaviours.pri</PackagePath>
+      <Modified>2023-11-11T20:17:16.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files\dotnet\packs\Microsoft.Maui.Controls.Ref.win\7.0.92\ref\net7.0-windows10.0.19041\Microsoft.Maui.Controls.Compatibility.pri">
       <PackagePath>Microsoft.Maui.Controls.Compatibility.pri</PackagePath>

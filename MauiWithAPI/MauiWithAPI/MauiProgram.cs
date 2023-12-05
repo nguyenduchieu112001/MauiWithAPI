@@ -4,6 +4,7 @@ using MauiWithAPI.Pages;
 using MauiWithAPI.Services;
 using MauiWithAPI.ViewModels;
 using Microsoft.Extensions.Logging;
+using SkiaSharp.Views.Maui.Controls.Hosting;
 
 namespace MauiWithAPI
 {
@@ -14,6 +15,7 @@ namespace MauiWithAPI
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseSkiaSharp(true)
                 .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
@@ -34,6 +36,7 @@ namespace MauiWithAPI
             builder.Services.AddTransient<UserPageViewModel>();
             builder.Services.AddTransient<ProductPageViewModel>();
             builder.Services.AddTransient<CategoryPageViewModel>();
+            builder.Services.AddTransient<DashboardViewModel>();
 
             //Pages
             builder.Services.AddTransient<MasterContentPage>();
@@ -42,6 +45,7 @@ namespace MauiWithAPI
             builder.Services.AddTransient<UserPage>();
             builder.Services.AddTransient<ProductPage>();
             builder.Services.AddTransient<CategoryPage>();
+            builder.Services.AddTransient<Dashboard>();
 
 #if DEBUG
             builder.Logging.AddDebug();

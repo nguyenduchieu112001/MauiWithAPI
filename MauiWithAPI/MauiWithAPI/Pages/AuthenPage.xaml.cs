@@ -22,7 +22,7 @@ public partial class AuthenPage : ContentPage
             _authPageViewModel.LoginForm.Password = passwordTextField.Text;
             if (await _authPageViewModel.Login())
             {
-                await AppConstants.NavigateToUserPage();
+                await AppConstants.NavigateToDashboard();
                 usernameTextField.Text = string.Empty;
                 passwordTextField.Text = string.Empty;
             }
