@@ -41,28 +41,25 @@
             </Frame>
             <Frame CornerRadius="5" Grid.Column="2" Grid.RowSpan="2" BackgroundColor="White">
                 <Grid HorizontalOptions="FillAndExpand"
-                      ColumnDefinitions=".5*, .5*"
+                      ColumnDefinitions=".5*, Auto"
                       RowDefinitions="*, *, *">
                     <lcv:PieChart Series="{Binding DoughnutSeries}" />
-                    
-                    <StackLayout Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand" 
-                                 VerticalOptions="CenterAndExpand">
-                        <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
-                            <Label Text="{Binding Processing}" TextColor="Black" 
-                                   FontAttributes="Bold" FontSize="20" />
-                            <Label Text="Processing" TextColor="Black" Margin="7"/>
-                        </HorizontalStackLayout>
-                        <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
-                            <Label Text="{Binding Failed}" TextColor="Black"
-                                   FontAttributes="Bold" FontSize="20" />
-                            <Label Text="Failed" TextColor="Black" Margin="7"/>
-                        </HorizontalStackLayout>
-                        <HorizontalStackLayout HorizontalOptions="StartAndExpand" VerticalOptions="StartAndExpand">
-                            <Label Text="{Binding Completed}" TextColor="Black" 
-                                   FontAttributes="Bold" FontSize="20" />
-                            <Label Text="Completed" TextColor="Black" Margin="7"/>
-                        </HorizontalStackLayout>
-                    </StackLayout>
+
+                    <Grid Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"
+                          ColumnDefinitions="40, Auto" RowDefinitions=".5*, .5*, .5*" RowSpacing="5">
+                        <Label Text="{Binding Processing}" TextColor="Black" 
+                                FontAttributes="Bold" FontSize="20" />
+                        <Label Text="Processing" TextColor="Black" Margin="7"
+                               Grid.Column="1"/>
+                        <Label Text="{Binding Failed}" TextColor="Black" Grid.Row="1"
+                                FontAttributes="Bold" FontSize="20" />
+                        <Label Text="Failed" TextColor="Black" Margin="7" Grid.Row="1"
+                               Grid.Column="1"/>
+                        <Label Text="{Binding Completed}" TextColor="Black" Grid.Row="2"
+                                FontAttributes="Bold" FontSize="20" />
+                        <Label Text="Completed" TextColor="Black" Margin="7" Grid.Row="2"
+                               Grid.Column="2"/>
+                    </Grid>
 
                     
 

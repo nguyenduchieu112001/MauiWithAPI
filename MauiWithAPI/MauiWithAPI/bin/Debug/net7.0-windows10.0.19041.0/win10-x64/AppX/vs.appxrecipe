@@ -30,13 +30,13 @@
     <AppXManifest Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-06T09:40:27.247</Modified>
+      <Modified>2023-12-07T01:50:30.666</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-06T09:18:37.872</Modified>
+      <Modified>2023-12-07T01:14:02.288</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.runtimeconfig.json">
       <PackagePath>MauiWithAPI.runtimeconfig.json</PackagePath>
@@ -44,11 +44,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.dll">
       <PackagePath>MauiWithAPI.dll</PackagePath>
-      <Modified>2023-12-06T09:40:25.497</Modified>
+      <Modified>2023-12-07T01:50:29.050</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiWithAPI.exe</PackagePath>
-      <Modified>2023-12-06T09:40:25.537</Modified>
+      <Modified>2023-12-07T01:50:29.114</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.deps.json">
       <PackagePath>MauiWithAPI.deps.json</PackagePath>
