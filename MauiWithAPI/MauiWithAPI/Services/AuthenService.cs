@@ -137,6 +137,7 @@ namespace MauiWithAPI.Services
         {
             SecureStorage.Default.Remove(AppConstants.AuthStorageKeyName);
             SecureStorage.Default.Remove(AppConstants.TokenExpirationKeyName);
+            _ = AppConstants.NavigateToAuthenPage();
         }
     }
 }

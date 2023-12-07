@@ -35,6 +35,11 @@ namespace MauiWithAPI.ViewModels
         public async Task GetAllCategory()
         {
             var result = await _categoryService.GetCategoriesAsync(Page, PageSize, Keyword);
+            if (result is null)
+            {
+                await AppConstants.NavigateToAuthenPage();
+                return;
+            }
             if (Categories.Count > 0)
             {
                 Categories.Clear();

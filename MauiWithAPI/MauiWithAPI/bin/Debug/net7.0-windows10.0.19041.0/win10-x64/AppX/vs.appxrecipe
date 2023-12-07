@@ -30,29 +30,29 @@
     <AppXManifest Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2023-12-05T08:24:34.528</Modified>
+      <Modified>2023-12-06T09:40:27.247</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2023-12-05T07:33:15.054</Modified>
+      <Modified>2023-12-06T09:18:37.872</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.runtimeconfig.json">
       <PackagePath>MauiWithAPI.runtimeconfig.json</PackagePath>
-      <Modified>2023-12-04T08:08:45.126</Modified>
+      <Modified>2023-12-06T08:24:37.898</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.dll">
       <PackagePath>MauiWithAPI.dll</PackagePath>
-      <Modified>2023-12-05T08:24:32.181</Modified>
+      <Modified>2023-12-06T09:40:25.497</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\apphost.exe">
       <PackagePath>MauiWithAPI.exe</PackagePath>
-      <Modified>2023-12-05T08:24:32.229</Modified>
+      <Modified>2023-12-06T09:40:25.537</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\bin\Debug\net7.0-windows10.0.19041.0\win10-x64\MauiWithAPI.deps.json">
       <PackagePath>MauiWithAPI.deps.json</PackagePath>
-      <Modified>2023-12-04T08:08:44.998</Modified>
+      <Modified>2023-12-06T08:24:37.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\nguye\.nuget\packages\microsoft.netcore.app.runtime.win-x64\7.0.10\runtimes\win-x64\lib\net7.0\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>

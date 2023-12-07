@@ -28,7 +28,8 @@ namespace MauiWithAPI.ViewModels
         private async void InitializeAsync()
         {
             var user = await _authenService.GetAuthenticatedUserAsync();
-            HeaderText = user.Username;
+            if (user != null)
+                HeaderText = user.Username;
         }
     }
 }

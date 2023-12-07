@@ -47,6 +47,11 @@ namespace MauiWithAPI.ViewModels
         public async Task GetAllProducts()
         {
             var result = await _productService.GetProductsAsync(Page, PageSize, Keyword);
+            if (result is null)
+            {
+                await AppConstants.NavigateToAuthenPage();
+                return;
+            }
             if (Products.Count > 0)
             {
                 Products.Clear();
@@ -65,6 +70,11 @@ namespace MauiWithAPI.ViewModels
         public async Task GetAllCategories()
         {
             var result = await _categoryService.GetCategoriesAsync(0, 0, null);
+            if (result is null)
+            {
+                await AppConstants.NavigateToAuthenPage();
+                return;
+            }
             if (Categories.Count > 0)
             {
                 Categories.Clear();

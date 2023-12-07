@@ -1,4 +1,9 @@
-﻿obj\Debug\net7.0-android\resizetizer\r\drawable\login.png
+﻿obj\Debug\net7.0-android\resizetizer\r\drawable\add_circle_icon.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\close.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\image.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\login.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\logout.png
+obj\Debug\net7.0-android\resizetizer\r\drawable\refresh_icon.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\delete_icon.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\dotnet_bot.png
 obj\Debug\net7.0-android\resizetizer\r\drawable-hdpi\password.png

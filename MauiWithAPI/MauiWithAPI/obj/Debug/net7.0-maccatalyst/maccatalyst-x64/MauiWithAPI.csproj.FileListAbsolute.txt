@@ -45,3 +45,8 @@ E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccata
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MauiWithAPI.AssemblyInfoInputs.cache
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MauiWithAPI.AssemblyInfo.cs
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\MauiWithAPI.csproj.CoreCompileInputs.cache
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\add_circle_icon.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\close.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\image.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\logout.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-maccatalyst\maccatalyst-x64\resizetizer\r\Resources\refresh_icon.png

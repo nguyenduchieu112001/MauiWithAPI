@@ -23,6 +23,9 @@ namespace MauiWithAPI
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
 
+            builder.Services.AddSingleton(Connectivity.Current);
+            builder.Services.AddSingleton(Map.Default);
+
             // Services
             builder.Services.AddSingleton<ICategoryService, CategoryService>();
             builder.Services.AddSingleton<IAuthenService, AuthenService>();

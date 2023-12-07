@@ -115,3 +115,15 @@ E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\MauiWithAPI
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\MauiWithAPI.AssemblyInfoInputs.cache
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\MauiWithAPI.AssemblyInfo.cs
 E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\MauiWithAPI.csproj.CoreCompileInputs.cache
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\resizetizer\r\drawable\add_circle_icon.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\resizetizer\r\drawable\close.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\resizetizer\r\drawable\image.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\resizetizer\r\drawable\logout.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\resizetizer\r\drawable\refresh_icon.png
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\lp\171\jl\files.cache
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\lp\182\jl\files.cache
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\lp\183\jl\files.cache
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\lp\184\jl\files.cache
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\lp\186\jl\files.cache
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\lp\188\jl\files.cache
+E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-android\lp\189\jl\files.cache
