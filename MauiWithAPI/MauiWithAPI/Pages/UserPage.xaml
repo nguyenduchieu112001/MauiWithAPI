@@ -22,6 +22,8 @@
                        SearchButtonPressed="SearchBar_SearchButtonPressed" 
                        TextColor="Black"
                        Placeholder="Search user..."/>
+        <Button x:Name="NewWindow" Grid.Row="1" Grid.Column="1" Command="{Binding CheckLocationCommand}"
+                BackgroundColor="BlanchedAlmond" Text="New Window"/>
 
         <Border StrokeThickness="1" Stroke="Black" StrokeShape="RoundRectangle" 
             Grid.Row="2" Grid.ColumnSpan="3">
