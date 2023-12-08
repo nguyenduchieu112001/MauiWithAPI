@@ -4,19 +4,25 @@ namespace MauiWithAPI
 {
     public static class AppConstants
     {
-        public const string HttpCategory = "https://localhost:7058/api/v1/Category";
-        public const string HttpProduct = "https://localhost:7058/api/v1/Product";
-        public const string HttpLogin = "https://localhost:7058/api/v1/Authen/login";
-        public const string HttpUser = "https://localhost:7058/api/v1/User";
-        public const string HttpRegister = "https://localhost:7058/api/v1/Authen/register";
+        public const string BaseUri = "https://localhost:7058/api/v1";
+
+        #region API URI
+        public const string HttpCategory = $"{BaseUri}/Category";
+        public const string HttpProduct = $"{BaseUri}/Product";
+        public const string HttpLogin = $"{BaseUri}/Authen/login";
+        public const string HttpUser = $"{BaseUri}/User";
+        public const string HttpRegister = $"{BaseUri}/Authen/register";
         public const string HttpGetCurrentLoginInformations =
-            "https://localhost:7058/api/v1/Authen/getCurrentLoginInformations";
+            $"{BaseUri}/Authen/getCurrentLoginInformations";
         public const string HttpImage = "https://localhost:7058/Resources";
+        #endregion
+
         public const string AuthStorageKeyName = "login-flow-auth-key";
         public const string TokenExpirationKeyName = "expiration-flow-auth-key";
 
         public const string Unauthorized = "Unauthorized";
 
+        #region Navigate To Page
         public static async Task NavigateToUserPage()
         {
             await Shell.Current.GoToAsync($"//{nameof(UserPage)}");
@@ -31,5 +37,6 @@ namespace MauiWithAPI
         {
             await Shell.Current.GoToAsync($"//{nameof(Dashboard)}");
         }
+        #endregion
     }
 }

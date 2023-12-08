@@ -6,7 +6,6 @@ public partial class LoadingPage : ContentPage
 {
     private readonly LoadingPageViewModel _loadingPageViewModel;
 
-    [Obsolete]
     public LoadingPage(LoadingPageViewModel loadingPageViewModel)
     {
         InitializeComponent();
@@ -16,22 +15,18 @@ public partial class LoadingPage : ContentPage
         IsLogin();
     }
 
-    [Obsolete]
     private async void IsLogin()
     {
-        await Device.InvokeOnMainThreadAsync(async () =>
-        {
-            await Task.Delay(3000); // Delay for 3 seconds
+        await Task.Delay(2000);
 
-            var result = await _loadingPageViewModel.IsLogin();
-            if (result)
-            {
-                await AppConstants.NavigateToDashboard();
-            }
-            else
-            {
-                await AppConstants.NavigateToAuthenPage();
-            }
-        });
+        var result = await _loadingPageViewModel.IsLogin();
+        if (result)
+        {
+            await AppConstants.NavigateToDashboard();
+        }
+        else
+        {
+            await AppConstants.NavigateToAuthenPage();
+        }
     }
 }

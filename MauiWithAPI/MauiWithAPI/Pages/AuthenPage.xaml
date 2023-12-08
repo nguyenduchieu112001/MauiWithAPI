@@ -82,8 +82,8 @@
                            Padding="10,0,0,0" FontSize="12"  VerticalOptions="Center" />
                 </Grid>
 
-                <Button Text="LOGIN" x:Name="loginButton" HeightRequest="40" VerticalOptions="End"
-                        HorizontalOptions="Fill" Margin="20,0,20,0" CornerRadius="10"
+                <Button Text="LOGIN" x:Name="loginButton" HeightRequest="50" VerticalOptions="End"
+                        HorizontalOptions="Fill" Margin="20,20,20,0" CornerRadius="15"
                         Padding="0" FontAttributes="Bold" TextColor="Black"
                         Clicked="loginButton_Clicked" Grid.Row="4" BackgroundColor="#7272F6">
                     <Button.Triggers>

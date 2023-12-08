@@ -8,6 +8,7 @@
     x:DataType="viewmodel:AuthPageViewModel"
     Shell.FlyoutBehavior="Locked"
     FlyoutWidth="160"
+    FlyoutBackgroundColor="#414141"
     Shell.TabBarIsVisible="False">
 
     <ShellContent 
@@ -22,19 +23,19 @@
         FlyoutItemIsVisible="False"
         Shell.FlyoutBehavior="Disabled"/>
 
-    <FlyoutItem Title="Dashboard" Route="Dashboard">
+    <FlyoutItem Route="Dashboard" Icon="dashboard.png" Title="Dashboard">
         <ShellContent ContentTemplate="{DataTemplate local:Dashboard}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Users" Route="UserPage">
+    <FlyoutItem Route="UserPage" Icon="user.png" Title="Users">
         <ShellContent ContentTemplate="{DataTemplate local:UserPage}"/>
     </FlyoutItem>
     
-    <FlyoutItem Title="Products" Route="ProductPage">
+    <FlyoutItem Route="ProductPage" Icon="product.png" Title="Products">
         <ShellContent ContentTemplate="{DataTemplate local:ProductPage}"/>
     </FlyoutItem>
 
-    <FlyoutItem Title="Categories" Route="CategoryPage">
+    <FlyoutItem Route="CategoryPage" Icon="category.png" Title="Categories">
         <ShellContent ContentTemplate="{DataTemplate local:CategoryPage}"/>
     </FlyoutItem>
 

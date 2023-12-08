@@ -925,6 +925,9 @@
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
       <PackagePath>appiconWideTile.scale-400.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\category.scale-100.png">
+      <PackagePath>category.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close.scale-100.png">
       <PackagePath>close.scale-100.png</PackagePath>
     </AppxPackagedFile>
@@ -945,6 +948,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\close_icon.scale-100.png">
       <PackagePath>close_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard.scale-100.png">
+      <PackagePath>dashboard.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\delete_icon.scale-100.png">
       <PackagePath>delete_icon.scale-100.png</PackagePath>
@@ -1002,6 +1008,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\password.scale-400.png">
       <PackagePath>password.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\product.scale-100.png">
+      <PackagePath>product.scale-100.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="E:\.NET\MauiWithAPI\MauiWithAPI\MauiWithAPI\obj\Debug\net7.0-windows10.0.19041.0\win10-x64\resizetizer\r\red_x.scale-100.png">
       <PackagePath>red_x.scale-100.png</PackagePath>

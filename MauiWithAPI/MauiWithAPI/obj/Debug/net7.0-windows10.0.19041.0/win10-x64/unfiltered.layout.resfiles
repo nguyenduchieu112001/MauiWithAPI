@@ -49,6 +49,7 @@ appiconWideTile.scale-125.png
 appiconWideTile.scale-150.png
 appiconWideTile.scale-200.png
 appiconWideTile.scale-400.png
+category.scale-100.png
 close.scale-100.png
 close.scale-125.png
 close.scale-150.png
@@ -56,6 +57,7 @@ close.scale-200.png
 close.scale-400.png
 close_icon.scale-100.png
 close2.scale-100.png
+dashboard.scale-100.png
 delete_icon.scale-100.png
 delete_icon.scale-125.png
 delete_icon.scale-150.png
@@ -75,6 +77,7 @@ password.scale-125.png
 password.scale-150.png
 password.scale-200.png
 password.scale-400.png
+product.scale-100.png
 red_x.scale-100.png
 refresh_icon.scale-100.png
 show_password.scale-100.jpg
