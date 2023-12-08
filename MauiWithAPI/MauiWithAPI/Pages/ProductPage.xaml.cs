@@ -148,6 +148,7 @@ public partial class ProductPage : MasterContentPage
             next.IsEnabled = true;
             previous.IsEnabled = true;
             _productPageViewModel.Page++;
+            _ = _productPageViewModel.GetAllProducts();
             _ = _productPageViewModel.GetAllCategories();
         }
     }
@@ -161,6 +162,7 @@ public partial class ProductPage : MasterContentPage
             previous.IsEnabled = true;
             next.IsEnabled = true;
             _productPageViewModel.Page--;
+            _ = _productPageViewModel.GetAllProducts();
             _ = _productPageViewModel.GetAllCategories();
         }
     }
